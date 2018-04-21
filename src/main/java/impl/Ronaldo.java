@@ -6,13 +6,17 @@ import java.util.List;
 
 class Ronaldo{
 
-    public static final String RONALDO = "Ronaldo";
+    private static final String RONALDO_STR = "Ronaldo";
     private static int nbrOfOccurrences =0;
+
+    private Ronaldo(){
+
+    }
 
     public static int highKick(List<String> list, Object... objects){
 
         for (String s : list) {
-            if (s.startsWith(RONALDO)){
+            if (s.startsWith(RONALDO_STR)){
                 kick(s, objects);
             }
         }

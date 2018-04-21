@@ -10,11 +10,6 @@ import static org.junit.Assert.assertEquals;
 
 public class RonaldoTest{
 
-
-    List<String> argsList = buildStringList();
-
-
-
     private List<String> buildStringList(){
         List<String> argsList = new LinkedList<String>();
 
@@ -29,9 +24,9 @@ public class RonaldoTest{
 
 
     @Test
-    public void HighKickTest() {
+    public void highKickTest() {
 
-       assertEquals(3, highKick(argsList));
+       assertEquals(3, highKick(buildStringList()));
 
     }
 }
